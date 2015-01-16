@@ -1,0 +1,85 @@
+body {
+	font-size: 16px;
+	background-color: #F3F3F3;
+	margin: 0;
+}
+header {
+	background-color: #E52934;
+	height: 80px;
+	padding: 0 64px;
+}
+.logo {
+	width: 100px;
+	margin-top: 21px;
+}
+nav {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+}
+ul {
+	margin: 0;
+}
+li {
+	display: inline;
+	margin-right: 32px;
+	line-height: 64px;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	color: #d1d1d1;
+}
+header input {
+	float: right;
+	margin-top: 30px;
+}
+.series{
+	padding: 16px;
+	width: 100%;
+}
+.serie{
+	display: inline-block;
+	width: 14%;
+}
+.contacto {
+	width: 60%;
+	margin-top: 8%;
+	margin-left: 20%;
+}
+/* Refactorizar este código. Ubicar las propiedades en común y utilizar los selectores separados por una coma */
+.contacto input {
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border:1px;
+	border:solid;
+	border: #7ac9b7;
+}
+.contacto textarea {
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border:1px;
+	border:solid;
+	border: #7ac9b7;
+	height: 150px;
+}
+.contacto input[type="submit"] {
+	background-color: #4180C5;
+	color: white;
+	cursor: pointer;
+}
+.contacto input[type="submit"]:hover{
+	background-color: black;
+}
