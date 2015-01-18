@@ -1,1 +1,36 @@
-estilos.css
+body {
+	font-size: 16px;
+	background-color: white;
+	margin: 0;
+}
+header {
+	background-color: #54585B;
+	height: 50px;
+}
+nav {
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+}
+ul {
+	font-weight: bold;
+}
+li {
+	display: inline;
+	margin-left: 35px;
+	margin-right: 15px;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.pasos {
+	display: inline-block;
+}
+.logo {
+	float: left;
+	margin: 40px;
+}
+.info {
+	float: right;
+}
