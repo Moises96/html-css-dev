@@ -50,6 +50,7 @@ header input {
 	margin-left: 20%;
 }
 /* Refactorizar este código. Ubicar las propiedades en común y utilizar los selectores separados por una coma */
+/*Ya modifiqué la parte de los selectores con comas */
 .contacto input {
 	font-size: 15px;
 	margin-top: 15px;
@@ -68,9 +69,7 @@ header input {
 	padding: 15px;
 	box-sizing: border-box;
 	border-radius: 5px;
-	border:1px;
-	border:solid;
-	border: #7ac9b7;
+	border:1px,solid,#7ac9b7;
 	height: 150px;
 }
 .contacto input[type="submit"] {

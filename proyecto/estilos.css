@@ -5,32 +5,107 @@ body {
 }
 header {
 	background-color: #54585B;
-	height: 50px;
+	height: 35px;
 }
 nav {
-	display: inline-block;
-	float: right;
-	vertical-align: top;
-}
-ul {
 	font-weight: bold;
 }
+ul {
+	float: right;
+}
 li {
-	display: inline;
-	margin-left: 35px;
-	margin-right: 15px;
+	display: inline-block;
+	float: left;
+	padding-right: 50px;
+	line-height: 5px;
 }
 a {
-	text-decoration: none;
 	color: white;
+	text-decoration: none;
 }
-.pasos {
+section {
+	margin-left: 170px;
+	margin-top: 50px;
+}
+.imagenes {
 	display: inline-block;
 }
-.logo {
-	float: left;
-	margin: 40px;
+.pasos {
+	display: inline;
 }
-.info {
+h2 {
+	color: #2EAADD;
+}
+.productos {
+	border-bottom: 1px dotted #404040;
+	margin-right: 200px;
+	padding-bottom: 20px;
+}
+div {
+	display: inline-block;
+	vertical-align: top;
+}
+.producto {
+	width: 200px;
+	padding-top: 20px;
+}
+.descripcion {
+	width: 400px;
+	font-size: 12px;
+}
+.cantidad {
+	width: 200px;
+	line-height: 50px;
+	padding-left: 20px;
+}
+.subtotal {
+	width: 100px;
+}
+#precio {
+	font-size: 18px;
+	color: #2EAADD;
+	font-weight: bold;
+}
+
+form label {
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+input[type="text"] {
+	font-size: 15px;
+	margin-bottom: 20px;
+	width: 250px;
+	box-sizing: border-box;
+}
+#departamento {
+	font-size: 15px;
+	margin-bottom: 20px;
+	width: 250px;
+	box-sizing: border-box;
+}
+textarea {
+	font-size: 15px;
+	margin-bottom: 20px;
+	width: 250px;
+	height: 150px;
+}
+.final {
 	float: right;
+	margin-right: 250px;
+}
+.pag {
+	display: inline;
+	padding-bottom: 50px;
+}
+input[type="submit"] {
+	background-color: #11B4FF;
+	color: white;
+	cursor: pointer;
+	width: 300px;
+	height: 50px;
+	font-size: 25px;
+	border:1px,solid;
+	border-radius: 15px;
 }
