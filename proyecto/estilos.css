@@ -1,5 +1,6 @@
 body {
 	font-size: 16px;
+	font-family: sans-serif;
 	background-color: white;
 	margin: 0;
 }
@@ -18,6 +19,7 @@ li {
 	float: left;
 	padding-right: 50px;
 	line-height: 5px;
+	font-size: 12px;
 }
 a {
 	color: white;
@@ -66,12 +68,15 @@ div {
 	color: #2EAADD;
 	font-weight: bold;
 }
-
+#nodisp {
+	color: #ABABAB;
+	font-size: 18px;
+	font-weight: bold;
+}
 form label {
 	width: 100px;
 	display: inline-block;
 	vertical-align: top;
-
 }
 input[type="text"] {
 	font-size: 15px;
@@ -108,4 +113,35 @@ input[type="submit"] {
 	font-size: 25px;
 	border:1px,solid;
 	border-radius: 15px;
+}
+.informacion {
+	width: 900px;
+}
+#mail {
+	color: #2EAADD;
+}
+h3 {
+	text-align: center;
+}
+footer {
+	background-color: #54585B;
+	margin-top: 200px;
+	padding-bottom: 10px;
+	height: 50px;
+}
+footer ul {
+	margin: 0;
+	float: right;
+	padding-right: 100px;
+	padding-top: 10px;
+}
+footer ul li {
+	display: inline;
+	color: white;
+}
+footer ul li img {
+	height: 40px;
+}
+.dpie {
+	padding-top: 15px;
 }
