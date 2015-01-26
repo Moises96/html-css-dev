@@ -16,65 +16,73 @@ ul {
 }
 li {
 	display: inline-block;
-	float: left;
 	padding-right: 50px;
 	line-height: 5px;
 	font-size: 12px;
+	vertical-align: top;
 }
 a {
 	color: white;
 	text-decoration: none;
 }
 section {
-	margin-left: 170px;
-	margin-top: 50px;
+	margin-right: 12%;
+	margin-left: 12%;
+	padding-bottom: 20px;
 }
-.imagenes {
-	display: inline-block;
+.productos {
+	margin-top: 40px;
 }
 .pasos {
-	display: inline;
+	margin-top: 50px;
 }
 h2 {
 	color: #2EAADD;
 }
-.productos {
-	border-bottom: 1px dotted #404040;
-	margin-right: 200px;
-	padding-bottom: 20px;
-}
-div {
+section .info {
 	display: inline-block;
-	vertical-align: top;
 }
 .producto {
-	width: 200px;
-	padding-top: 20px;
+	border-bottom: 1px dotted #404040;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	display: block;
+}
+.producto img {
+	margin: 10px;
+}
+.producto div {
+	padding-left: 50px;
+	vertical-align: top;
+	display: inline-block;
 }
 .descripcion {
-	width: 400px;
+	width: 38%;
 	font-size: 12px;
 }
 .cantidad {
-	width: 200px;
+	width: 18%;
 	line-height: 50px;
-	padding-left: 20px;
 }
 .subtotal {
-	width: 100px;
+	width: 10%;
 }
-#precio {
+.costo {
 	font-size: 18px;
 	color: #2EAADD;
 	font-weight: bold;
 }
-#nodisp {
-	color: #ABABAB;
+.nodisp {
 	font-size: 18px;
+	color: #ABABAB;
 	font-weight: bold;
 }
+.datos {
+	margin-top: 30px;
+}
 form label {
-	width: 100px;
+	width: 150px;
+	font-size: 17px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -98,11 +106,13 @@ textarea {
 }
 .final {
 	float: right;
-	margin-right: 250px;
 }
-.pag {
+.datos h3 {
 	display: inline;
 	padding-bottom: 50px;
+}
+.datos span {
+	float: right;
 }
 input[type="submit"] {
 	background-color: #11B4FF;
@@ -111,37 +121,26 @@ input[type="submit"] {
 	width: 300px;
 	height: 50px;
 	font-size: 25px;
-	border:1px,solid;
+	border:1px solid;
 	border-radius: 15px;
-}
-.informacion {
-	width: 900px;
-}
-#mail {
-	color: #2EAADD;
-}
-h3 {
-	text-align: center;
 }
 footer {
 	background-color: #54585B;
 	margin-top: 200px;
 	padding-bottom: 10px;
 	height: 50px;
+	color: white
 }
-footer ul {
-	margin: 0;
+footer img {
+	height: 40px;
 	float: right;
-	padding-right: 100px;
+	padding-right: 12%;
 	padding-top: 10px;
 }
-footer ul li {
-	display: inline;
-	color: white;
-}
-footer ul li img {
-	height: 40px;
-}
 .dpie {
-	padding-top: 15px;
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+	font-weight: bold;	
 }
+

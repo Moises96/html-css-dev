@@ -23,7 +23,7 @@ ul {
 li {
 	display: inline;
 	margin-right: 32px;
-	line-height: 64px;
+	line-height: 75px;
 }
 a {
 	color: white;
@@ -39,10 +39,15 @@ header input {
 .series{
 	padding: 16px;
 	width: 100%;
+	overflow: hidden;
 }
-.serie{
-	display: inline-block;
-	width: 14%;
+.serie {
+	float: left;
+	width: 13%;
+	margin-right: 15px;
+}
+.serie:last-child {
+	margin-right: 0px;
 }
 .contacto {
 	width: 60%;
@@ -59,7 +64,7 @@ header input {
 	padding: 15px;
 	box-sizing: border-box;
 	border-radius: 5px;
-	border:1px,solid,#7ac9b7;
+	border: 1px solid #7ac9b7;
 }
 .contacto textarea {
 	font-size: 15px;
@@ -69,7 +74,7 @@ header input {
 	padding: 15px;
 	box-sizing: border-box;
 	border-radius: 5px;
-	border:1px,solid,#7ac9b7;
+	border: 1px solid #7ac9b7;
 	height: 150px;
 }
 .contacto input[type="submit"] {
@@ -79,4 +84,40 @@ header input {
 }
 .contacto input[type="submit"]:hover{
 	background-color: black;
+}
+.vista-previa {
+	margin-top: 70px;
+	overflow: hidden;
+}
+.vista-previa img {
+	float: left;
+	width: 50%;
+	margin-left: 8%;
+
+}
+.serie-info {
+	width: 30%;
+	list-style-type: none;
+	float: left;
+	margin-left: 4%;
+	margin-right: 8%;
+}
+.serie-info ul {
+	padding-left: 0;
+}
+.serie-info li {
+	display: block;
+	height: 25px;
+}
+.serie-info p {
+	margin-top: 40px;
+}
+.serie-info button {
+	display: block;
+	height: 25px;
+	margin-bottom: 10px;
+	padding: .5em 1em;
+}
+.serie-info button i {
+	width: 20px;
 }
