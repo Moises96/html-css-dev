@@ -1,7 +1,8 @@
 body {
 	font-size: 16px;
 	background-color: #F3F3F3;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 1024px;
 }
 header {
 	background-color: #E52934;
@@ -36,28 +37,32 @@ header input {
 	float: right;
 	margin-top: 30px;
 }
-.series{
+.series {
+    font-size: 0;
 	padding: 16px;
-	width: 100%;
 	overflow: hidden;
 }
+.series h2 {
+    font-size: 2.5rem;
+}
 .serie {
-	float: left;
+	display: inline-block;
 	width: 13%;
-	margin-right: 15px;
+	margin-right: 1%;
+}
+.serie img {
+	width: 100%;
 }
 .serie:last-child {
-	margin-right: 0px;
+	margin-right: 0;
 }
 .contacto {
 	width: 60%;
 	margin-top: 8%;
 	margin-left: 20%;
 }
-/* Refactorizar este código. Ubicar las propiedades en común y utilizar los selectores separados por una coma */
-/*Ya modifiqué la parte de los selectores con comas */
-.contacto input {
-	font-size: 15px;
+.contacto input, .contacto textarea {
+    font-size: 15px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	width: 100%;
@@ -67,14 +72,6 @@ header input {
 	border: 1px solid #7ac9b7;
 }
 .contacto textarea {
-	font-size: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	width: 100%;
-	padding: 15px;
-	box-sizing: border-box;
-	border-radius: 5px;
-	border: 1px solid #7ac9b7;
 	height: 150px;
 }
 .contacto input[type="submit"] {
@@ -86,14 +83,13 @@ header input {
 	background-color: black;
 }
 .vista-previa {
-	margin-top: 70px;
+	margin-top: 30px;
 	overflow: hidden;
 }
 .vista-previa img {
 	float: left;
 	width: 50%;
 	margin-left: 8%;
-
 }
 .serie-info {
 	width: 30%;
@@ -120,4 +116,45 @@ header input {
 }
 .serie-info button i {
 	width: 20px;
+}
+@media screen and (max-width: 800px) {
+	nav {
+		display: none;
+	}
+	header {
+		padding: 0 16px;
+	}
+	header input {
+		width: 150px;
+	}
+	.serie {
+		margin-right: 5%;
+		width: 16%;
+		margin-bottom: 20px;
+	}
+	.serie:nth-child(6) {
+		margin-right: 0;
+	}
+	.vista-previa {
+		padding: 1% 10%;
+	}
+	.serie-info, .vista-previa img {
+		width: 100%;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 600px) {
+	.serie {
+		width: 30%;
+		margin-right: 5%;
+	}
+	.serie:nth-child(3n + 1) {
+		margin-right: 0;
+	}
+	.serie:nth-child(6) {
+		margin-right: 5%;
+	}
+	.vista-previa {
+		padding: .5% 5%;
+	}
 }

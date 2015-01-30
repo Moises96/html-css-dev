@@ -30,17 +30,31 @@ section {
 	margin-left: 12%;
 	padding-bottom: 20px;
 }
-.productos {
-	margin-top: 40px;
-}
 .pasos {
 	margin-top: 50px;
+}
+.pasos img {
+	vertical-align: top;
+}
+.logo {
+	width: 30%;
+	float: left;
+	padding-right: 20px;
+}
+.pasos div {
+	width: 60%;
+	padding-top: 5%;
+	display: inline-block;
+}
+.pasos p span {
+	color: gray;
+	font-size: 22px;
 }
 h2 {
 	color: #2EAADD;
 }
-section .info {
-	display: inline-block;
+.productos {
+	margin-top: 40px;
 }
 .producto {
 	border-bottom: 1px dotted #404040;
@@ -58,7 +72,7 @@ section .info {
 }
 .descripcion {
 	width: 38%;
-	font-size: 12px;
+	font-size: 14px;
 }
 .cantidad {
 	width: 18%;
@@ -67,15 +81,13 @@ section .info {
 .subtotal {
 	width: 10%;
 }
-.costo {
+.costo, .nodisp, .pasos p{
 	font-size: 18px;
 	color: #2EAADD;
 	font-weight: bold;
 }
 .nodisp {
-	font-size: 18px;
 	color: #ABABAB;
-	font-weight: bold;
 }
 .datos {
 	margin-top: 30px;
@@ -86,22 +98,13 @@ form label {
 	display: inline-block;
 	vertical-align: top;
 }
-input[type="text"] {
-	font-size: 15px;
-	margin-bottom: 20px;
-	width: 250px;
-	box-sizing: border-box;
-}
-#departamento {
+input[type="text"], #departamento, textarea {
 	font-size: 15px;
 	margin-bottom: 20px;
 	width: 250px;
 	box-sizing: border-box;
 }
 textarea {
-	font-size: 15px;
-	margin-bottom: 20px;
-	width: 250px;
 	height: 150px;
 }
 .final {
@@ -143,4 +146,26 @@ footer img {
 	padding-top: 20px;
 	font-weight: bold;	
 }
-
+@media screen and (max-width: 800px) {
+	li {
+		padding-right: 10px;
+	}
+	.generar-pedido {
+		display: none;
+	}
+	.logo {
+		padding-left: 40%;
+	}
+	.descripcion {
+		width: 60%;
+	}
+	.cantidad {
+		width: 60%;
+	}
+	.costo {
+		padding-right: 30%;
+	}
+	.subtotal {
+		width: 20%;
+	}
+}
